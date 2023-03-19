@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+ \includegraphics[scale=0.10]{du.png}\par
+		\begin{Huge}
+			\textsc{University of Dhaka}\par
+		\end{Huge}
+		\begin{Large}
+			Department of Computer Science and Engineering\par \vspace{1cm}
+			CSE-3113 : Microprocessor and Assembly Language Lab \\[12pt]	
+			Lab Report 4 : Familiarizing with register based assembly programming for Cortex M4 processor for data processing instruction set
+		\end{Large}
+	\end{center}  	
+	\begin{large}
+		\textbf{Submitted By:\\[12pt]}
+			Name : Tanzeem Maliat\\[8pt]
+			Roll No : 51\\[12pt]
+		\textbf{Submitted On : \\[12pt]}
+			February 28, 2023\\[20pt]
+		\textbf{Submitted To :\\[12pt]}
+			Dr. Upama Kabir\\[12pt]
+            Dr. Md. Mustafizur Rahman\\[12pt]
+	\end{large}
+\end{titlepage}
+
+\section{Introduction}
+The objective of this lab is to understand data processing instruction set using Cortex M4 Processor while solving given six problems on arithmetic operation on 16 bit variables or 32 bit variables. 
+
+\subsection{Problem Solving Approach}
+A brief description in order to solve the given arithmetic operations: 
+\begin{itemize}
+    \item In problem 1: A problem was given to perform AND, OR, NOR, NAND, XOR, XNOR operation on two 16-bit variables as well as 32-bit variables. So I performed the individual arithmetic operations on both type of variables using different assembly files. The final results were in register r2, r3, r4, r5, r6 and r7.
+    
+    \includegraphics[width=\textwidth]{p_1_16.jpg}
+    \includegraphics[width=\textwidth]{p_1_32.jpg}
+    
+    \item In problem 2: A problem was given to perform all the shift operations (LSR,ASR,LSL) on a 32-bit variable. So I solved it by using MOV32 in order to move a 32-bit variable and used the LSR, ASR and LSL operation on it.The final results were in register r1, r2 and r3
+    
+    \includegraphics[width=\textwidth]{p_2.jpg}
+    \newpage
+    \item In problem 3: A problem was given to perform all the arithmetic operations(Addition, Subtraction, Division and Multiplication) . I solved it by using ADD, SUB, MUL,SDIV for the part we were told not to hanlde the oerflow. For this part, the results were in r2, r3, r4 and r5. Then I solved it using ADDS, SUBS, UMULL and SDIV for the part we were told to handle the overflow. For this part, the results were in r6, r8, r10, r11 and r12.
+    
+    \includegraphics[width=\textwidth]{p_3.jpg}
+    
+    \item In problem 4: A problem was given to find the average of n numbers. I initiated an array and added up all its element to have the total sum of it and then divide it by the size of the array in order to find the average.The result was in register r0. I used area for data in order to initiate an array.
+    
+    \includegraphics[width=\textwidth]{p_4.jpg}
+    
+    \item In problem 5: A problem was given to find the largest among n different numbers.I solved it using an array of a predetermined length. I preserved the largest value and then traverse through the array in order to find the largest value and then store it in a register.The largest value will be in register r0.I used area for data in order to initiate an array.
+    
+    \includegraphics[width=\textwidth]{p_5.jpg}
+    
+    \item In problem 6: A problem was given to find the average of n numbers using function. I initiated an array and added up all its element to have the total sum of it and then divide it by the size of the array in order to find the average by using a label sum which was then called in the main.I used area for data in order to initiate an array.
+    
+    \includegraphics[width=\textwidth]{p_6.jpg}
+    
+\end{itemize}
+%%%%
+%%%%
+\end{document}
